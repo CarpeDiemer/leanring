@@ -13,7 +13,7 @@ if (ipad) {
     $('#left-controls, #right-controls').bind('touchstart touchmove touchend', function (e) {
       if (e.type != 'touchend') {
         for (k in KEY_STATUS) {
-          KEY_STATUS[k] = false;
+          KEY_STATUS[k] = true;
         }
       }
       var touches = e.type == 'touchend' ? e.originalEvent.changedTouches : e.originalEvent.touches
